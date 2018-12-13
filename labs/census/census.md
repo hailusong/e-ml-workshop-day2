@@ -543,15 +543,15 @@ For more information about hyperparameter tuning, see the [hyperparameter tuning
 
 5. Find a directory named `$OUTPUT_PATH/export/census/` and copy this directory path (without the : at the end) and set the environment variable `MODEL_BINARIES` to its value. For example:
     
-        MODEL_BINARIES=gs://$BUCKET_NAME/census_dist_1/export/census/1487877383942/
+        MODEL_BINARIES=gs://$BUCKET_NAME/census_dist_1/export/census/<ID>/
 
 Where `$BUCKET_NAME` is your Cloud Storage bucket name, and `census_dist_1` is the output directory.
 
 6. Run the following command to create a version `v1`:
     
-        gcloud ml-engine versions create v1 
-        --model $MODEL_NAME 
-        --origin $MODEL_BINARIES 
+        gcloud ml-engine versions create v1  \
+        --model $MODEL_NAME \
+        --origin $MODEL_BINARIES \
         --runtime-version 1.10
     
 
@@ -566,9 +566,9 @@ You can get a list of your models using the `models list` command.
 You can now send prediction requests to your model. For example, the following command sends an online prediction request using a `test.json` file that you downloaded as part of the sample GitHub repository.
     
     
-    gcloud ml-engine predict 
-        --model $MODEL_NAME 
-        --version v1 
+    gcloud ml-engine predict \
+        --model $MODEL_NAME \
+        --version v1 \
         --json-instances ../test.json
     
 
