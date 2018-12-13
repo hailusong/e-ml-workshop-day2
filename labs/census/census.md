@@ -600,7 +600,7 @@ The batch prediction service is useful if you have large amounts of data and no 
         gcloud ml-engine jobs submit prediction $JOB_NAME \
         --model $MODEL_NAME \
         --version v1 \
-        --data-format JSON \
+        --data-format TEXT \
         --region $REGION \
         --input-paths $TEST_JSON \
         --output-path $OUTPUT_PATH/predictions
