@@ -138,7 +138,24 @@ Predictions invoked from a web application.
 * Like a stop sign in a picture
 * Or words within a sentence
 
+## Convolutional Neural Networks
 
+* Convolutional neural networks are deep artificial neural networks that are used primarily to classify images (e.g. name what they see), cluster them by similarity (photo search), and perform object recognition within scenes. They are algorithms that can identify faces, individuals, street signs, tumors, platypuses and many other aspects of visual data.
+![image][8]
+
+
+# CNN DEMO
+
+# Lab 4 
+## Preprocessing using Dataflow
+
+** While Pandas is great for experimenting, for operationalization of your workflow, it is better to do preprocessing with Apache Beam (Dataflow) **
+ 
+# Lab 5
+## Train on Cloud ML Engine
+** This lab illustrates distributed training and hyperparameter tuning on Cloud ML Engine **
+
+# LUNCH!
 
 [1]: https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/S1.png?raw=true
 
@@ -153,3 +170,5 @@ Predictions invoked from a web application.
 [6]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/refresher.png?raw=true
 
 [7]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/S2.png?raw=true
+
+[8]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/cnn.png?raw=true
