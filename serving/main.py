@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Copyright 2017 Google Inc.
@@ -26,18 +27,18 @@ from flask import url_for
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
 
-from google.appengine.api import app_identity
+#from google.appengine.api import app_identity
 
 
 credentials = GoogleCredentials.get_application_default()
+print(credentials)
 api = discovery.build('ml', 'v1', credentials=credentials)
-project = app_identity.get_application_id()
+project =  os.getenv('PROJECT', 'tflab-demo')
 model_name = os.getenv('MODEL_NAME', 'babyweight')
 version_name = os.getenv('VERSION_NAME', 'ml_on_gcp')
 
 
 app = Flask(__name__)
-
 
 def get_prediction(features):
   input_data = {'instances': [features]}
@@ -84,3 +85,6 @@ def predict():
 
   prediction = get_prediction(features)
   return jsonify({'result': '{:.2f} lbs.'.format(prediction)})
+
+if __name__ == "__main__":
+    app.run()
