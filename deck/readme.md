@@ -114,16 +114,19 @@ Predictions invoked from a web application.
 
 # Lab 1 
 ## Exploring a BigQuery dataset to find features and to use in model. 
+![image][9] ![image][10]
 
 ** BigQuery: publicdata.samples.natality **
 
 # Lab 2 
 ## Creating a sampled dataset
+![image][10]
 
  ** sample the full BQ, create a smaller dataset so that you can use it for model development and local training **
 
 # Lab 3
 ## Preprocessing using Dataflow
+![image][11]
 
 ** In this lab, you use the high-level Estimator API for a wide-and-deep model **
 
@@ -149,16 +152,23 @@ Predictions invoked from a web application.
 # Lab 4 
 ## Preprocessing using Dataflow
 
+![image][11] ![image][12]
+
 ** While Pandas is great for experimenting, for operationalization of your workflow, it is better to do preprocessing with Apache Beam (Dataflow) **
  
 # Lab 5
 ## Train on Cloud ML Engine
+
+![image][13]
+
 ** This lab illustrates distributed training and hyperparameter tuning on Cloud ML Engine **
 
 # LUNCH!
 
 # Lab 6
 ## Deploy and Predict
+
+![image][13]
 
 ** In this lab, you deploy your trained model to Cloud ML Engine **
 
@@ -193,20 +203,31 @@ This lab provides an introductory, end-to-end walkthrough of training and predic
 
 ### Discriminator
 
+![image][14]
+
 A discriminator that tells how real an image is, is basically a deep Convolutional Neural Network (CNN) 
 
 ### Generator
+
+![image][15]
 
 The generator synthesizes fake images
 
 ### Generative Adversarial Network (GAN)
 
+![image][16]
+
 ### Example
 The GAN is learning how to write handwritten digits on its own!
 
+![image][17]
+
 ### Faces
+![image][18]
 
 ### Video Demo
+[![Faces Demo](http://img.youtube.com/vi/XOxxPcy5Gr4/0.jpg)](http://www.youtube.com/watch?v=XOxxPcy5Gr4)
+
 
 # Using Existing Models 
 ## Applications
@@ -248,3 +269,23 @@ Available models for image classification with weights trained on ImageNet:
 [7]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/S2.png?raw=true
 
 [8]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/cnn.png?raw=true
+
+[9]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/datalab.png?raw=true
+
+[10]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/bq.png?raw=true
+
+[11]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/df.png?raw=true
+
+[12]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/stg.png?raw=true
+
+[13]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/mlengine.png?raw=true
+
+[14]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/gan1.png?raw=true
+
+[15]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/gan2.png?raw=true
+
+[16]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/gan3.png?raw=true
+
+[17]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/gan4.png?raw=true
+
+[18]:https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/gan5.png?raw=true
