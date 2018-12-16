@@ -82,15 +82,15 @@ The **COCO mAP** column shows the model's accuracy index. Higher numbers indicat
         cd /tmp
     
         for model in \
-     	 ssd_mobilenet_v1_coco_11_06_2017 \
-      	 ssd_inception_v2_coco_11_06_2017 \
-         rfcn_resnet101_coco_11_06_2017 \
-         faster_rcnn_resnet101_coco_11_06_2017 \ 
-         faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017
-        do 
-         curl -OL http://download.tensorflow.org/models/object_detection/$model.tar.gz
-         tar -xzf $model.tar.gz $model/frozen_inference_graph.pb
-         cp -a $model /opt/graph_def/
+           ssd_mobilenet_v1_coco_11_06_2017 \
+           ssd_inception_v2_coco_11_06_2017 \
+           rfcn_resnet101_coco_11_06_2017 \
+           faster_rcnn_resnet101_coco_11_06_2017 \
+           faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017
+        do \
+          curl -OL http://download.tensorflow.org/models/object_detection/$model.tar.gz
+          tar -xzf $model.tar.gz $model/frozen_inference_graph.pb
+          cp -a $model /opt/graph_def/
         done
 
 4. Choose a model for the web application to use. For example, to select `faster_rcnn_resnet101_coco_11_06_2017`, enter the following command:
