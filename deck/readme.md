@@ -157,6 +157,82 @@ Predictions invoked from a web application.
 
 # LUNCH!
 
+# Lab 6
+## Deploy and Predict
+
+** In this lab, you deploy your trained model to Cloud ML Engine **
+
+# Lab 7
+** Interface with your model via an application **
+
+# Break!
+
+# CloudML Lab 2
+
+## Overview
+
+This lab provides an introductory, end-to-end walkthrough of training and prediction on Cloud Machine Learning Engine. You will walk through a sample that uses a census dataset to:
+
+* Create a TensorFlow training application and validate it locally.
+* Run your training job on a single worker instance in the cloud.
+* Run your training job as a distributed training job in the cloud.
+* Optimize your hyperparameters by using hyperparameter tuning.
+* Deploy a model to support prediction.
+* Request an online prediction and see the response.
+
+# Break!
+
+# GANs
+### Generative Adversarial Network (GAN)
+
+* One of the most promising recent developments in Deep Learning
+
+* Attacks the problem of unsupervised learning by training two deep networks, that compete and cooperate with each other. In the course of training, both networks eventually learn how to perform their tasks.
+
+* GAN is almost always explained like the case of a counterfeiter (Generative) and the police (Discriminator)
+
+### Discriminator
+
+A discriminator that tells how real an image is, is basically a deep Convolutional Neural Network (CNN) 
+
+### Generator
+
+The generator synthesizes fake images
+
+### Generative Adversarial Network (GAN)
+
+### Example
+The GAN is learning how to write handwritten digits on its own!
+
+### Faces
+
+### Video Demo
+
+# Using Existing Models 
+## Applications
+
+Keras Applications are deep learning models that are made available alongside pre-trained weights. These models can be used for prediction, feature extraction, and fine-tuning. Weights are downloaded automatically when instantiating a model. 
+
+Available models for image classification with weights trained on ImageNet:
+
+* Xception
+* VGG16
+* VGG19
+* ResNet50
+* InceptionV3
+* InceptionResNetV2
+* MobileNet
+* DenseNet
+* NASNet
+* MobileNetV2
+
+# TF - Object Detection
+## Lab 3
+
+# Questions / Discussion
+
+# Done! You Made It! 
+
 [1]: https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/S1.png?raw=true
 
 [2]: https://github.com/ArctiqTeam/e-ml-workshop-day2/blob/master/deck/images/tensorflow-logo.png?raw=true
