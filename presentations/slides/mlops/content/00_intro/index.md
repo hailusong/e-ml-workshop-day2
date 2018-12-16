@@ -1,5 +1,6 @@
 ![](../images/arctiq-logo-white.png)<!-- .element style="border: 0; background: None; box-shadow: None height="10%" width="10%"" -->
-# Machine Learn on GCP - Day 2
+
+# Machine Learning on GCP - Day 2
 
 
 # ML Engine
